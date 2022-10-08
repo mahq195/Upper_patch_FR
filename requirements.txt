@@ -1,0 +1,8 @@
+facenet-pytorch
+opencv-python
+mtcnn
+Pillow
+torch 
+torchvision
+tensorflow
+matplotlib
