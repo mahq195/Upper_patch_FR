@@ -15,4 +15,37 @@ pip install -r requirements.txt
 1. Data preparation
 
 For the first time, if you want to add your own images data, just prepare and add the data following the format
+```
+input_image/
+      - giang/
+            + mask/
+                  ~ mask_img1
+                  ~ mask_img2
+                  ~ mask_img3
+            + no_mask/
+                  ~ no_mask_img1
+                  ~ no_mask_img2
+                  ~ no_mask_img3
+      - linh/
+            + mask/
+                  ~ mask_img1
+                  ~ mask_img2
+                  ~ mask_img3
+            + no_mask/
+                  ~ no_mask_img1
+                  ~ no_mask_img2
+                  ~ no_mask_img3
+      ...
+```
+Please create your own folder following the given format.
+
+2. Create database
+Run the following command to create embeddings saved inside `database` folder 
+```
+python create_embeddings.py
+```
+3. Run `camera.py` to activate recognition process using your camera
+``` 
+python camera.py
+```
 
